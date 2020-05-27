@@ -1,0 +1,82 @@
+body{
+  margin:0;
+  background: url('images/back.jpg');
+  background-size: cover;
+}
+.container{
+  background: linear-gradient(to bottom,#25211e 0,rgba(37,33,30,0) 100%);
+  position: fixed;
+top: 0;
+left:0;
+right:0;
+
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+  float: left;
+padding: 20px 0;
+margin-left: 20px;
+cursor: pointer;
+}
+
+nav {
+  float: none;
+  opacity: 1;
+}
+
+header::after{
+  display: table;
+  clear: both;
+  content: "";
+  padding-bottom: 0;
+
+}
+
+nav ul {
+  margin-top: 60;
+  padding-right: 4in;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  position: relative;
+  left: auto;
+  right: auto;
+
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 50px;
+  padding-top: 30px;
+  padding-bottom: 0;
+  position: relative;
+
+}
+
+nav a{
+  text-decoration: none;
+  font-size: 20px;
+text-transform: uppercase;
+ color: white;
+}
+nav a:hover{
+  color:black;
+}
+nav a::before{
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  background-color: white;
+  position: absolute;
+  top:0;
+  transition: all ease-in-out 300ms;
+}
+nav a:hover::before{
+  width:100%;
+}
+header:hover{
+  background-color:black;
+}
